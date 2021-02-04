@@ -9,7 +9,7 @@ public class Loteria {
 
 
 
-    private static List<Integer> getRandomNumbers() {
+    public static List<Integer> getRandomNumbers() {
         int number;
         List<Integer> randomNumbers = null;
         for (int i = 1; i <= 6; i++) {
@@ -26,7 +26,7 @@ public class Loteria {
 //        return numberList.subList(0, 6);
 //    }
 
-    private static List<Integer> compareNumbers(List<Integer> chosenNumbers, List<Integer> randomNumbers) {
+    public static List<Integer> compareNumbers(List<Integer> chosenNumbers, List<Integer> randomNumbers) {
         int matchedNumber = 0;
         List<Integer> matchedNumbers = null;
         for (Integer chosenNumber : chosenNumbers
